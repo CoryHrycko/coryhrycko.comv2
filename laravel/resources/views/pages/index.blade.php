@@ -187,52 +187,12 @@
 </div>
 {{--  --}}
 
-<div class="divC">
-
-		<input class="inputC w-100"checked id="one" name="multiples" type="radio" value="1">
-        <label class="labelC" for="one">1</label>
-
-		<input class="inputC w-100" id="two" name="multiples" type="radio" value="2">
-        <label class="labelC" for="two">2</label>
-
-        <input class="inputC w-100" id="three" name="multiples" type="radio" value="3">
-        <label class="labelC"for="three">3</label>
-
-        <input class="inputC w-100" id="four" name="multiples" type="radio" value="4">
-        <label  class="labelC"for="four">4</label>
-
-        <input class="inputC w-100" id="five" name="multiples" type="radio" value="5">
-        <label class="labelC" for="five">5</label>
-
-        <input class="inputC w-100" id="six" name="multiples" type="radio" value="6">
-        <label class="labelC" for="six">6</label>
-
-        <input class="inputC w-100" id="seven" name="multiples" type="radio" value="7">
-        <label class="labelC" for="seven">7</label>
-
-        <input class="inputC w-100" id="eight" name="multiples" type="radio" value="8">
-        <label class="labelC" for="eight">8</label>
-
-		<div class="containerC">
-			<div class="carouselC">
-                <h1 class="d-block w-100 flex-center"> Html5-Ham/XML</h1>
-				<h1 class="d-block w-100 flex-center"> Css3-Sass/Scss/Bootstrap</h1>
-				<h1 class="d-block w-100 flex-center"> Webpack/Gulp</h1>
-				<h1 class="d-block w-100 flex-center"> JavaScript</h1>
-				<h1 class="d-block w-100 flex-center"> React-Redux/Vue/jQuery</h1>
-				<h1 class="d-block w-100 flex-center"> Version Controls</h1>
-				<h1 class="d-block w-100 flex-center"> JSON/AJAX</h1>
-				<h1 class="d-block w-100 flex-center"> Blade/WordPress</h1>
-			</div>
-		</div>
-	</div>
-
 {{--  --}}
 <div class="flex-center position-ref full-height">
     <div class="content4 container">
         <form>
             <input type="text" name="firstName" />
-            <input type="text" name="firstName"/>
+            <input type="text" name="lastName"/>
             <input type="email" name="email"/>
         </form>
     </div>
