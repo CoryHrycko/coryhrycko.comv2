@@ -7,11 +7,12 @@
         <title>{{config('app.name','coryscorrner')}}</title>
 
         <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href ="{{asset('css/app.css')}}">
         <!-- Styles -->
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
             @yield('content')
         <script src= "{{asset('js/app.js')}}" ></script>
     </body>

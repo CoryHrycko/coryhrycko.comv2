@@ -5,6 +5,7 @@ html, body {
     font-weight: 200;
     height: 100vh;
     margin: 0;
+	padding:0;
 	overflow:auto;
     overflow-x:hidden;
 }
@@ -51,6 +52,10 @@ img{
 .content4{
 	flex-direction: column;
 }
+.content5{
+	background-image: linear-gradient(180deg, $white, $cyan);
+	z-index:-1;
+}
 
 .title {
     font-size: 84px;
@@ -96,6 +101,11 @@ img{
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.specialSig{
+	margin-bottom:-1.5rem;
+	font-family: 'Parisienne', cursive;
+	font-size: 44rem;
 }
 // -------------------------------------------------
 .divC {

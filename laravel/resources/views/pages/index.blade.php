@@ -25,7 +25,12 @@
         <div class= " about">
             <div class= "Skills">
                 <div class="skillsBackEnd flex-center-right links2">
-                            {{-- Experimenting with Carosal --}}
+{{--* Experimenting with Carosal --}}
+
+{{--*  --}}
+
+
+
 
 <div class="divC">
 
@@ -85,13 +90,13 @@
         <label class="labelC" for="thirteen">RV</label>
 
         <input class="inputC w-100" id="fourteen" name="multiples" type="radio" value="6">
-        <label class="labelC" for="fourteen">jQ</label>
+        <label class="labelC" for="fourteen">WP</label>
 
         <input class="inputC w-100" id="fifteen" name="multiples" type="radio" value="7">
         <label class="labelC" for="fifteen">Aj</label>
 
         <input class="inputC w-100" id="sixteen" name="multiples" type="radio" value="8">
-        <label class="labelC" for="sixteen">WP</label>
+        <label class="labelC" for="sixteen">JQ</label>
 		<div class="containerC">
             <div class="carouselC">
                     <img src="https://www.viewlike.us/wp-content/uploads/2013/04/html5_css3.png" />
@@ -99,9 +104,9 @@
                     <img src="https://cdn-eliostruyf.azureedge.net/wp-content/uploads/2016/10/101116_0811_Gettingupto1.png" />
                     <img src="https://raw.githubusercontent.com/mailtoharshit/awesome-salesforce/master/src/JavaScript.png" />
                     <img src="https://res.cloudinary.com/dukp6c7f7/image/upload/f_auto,fl_lossy,q_auto/s3-ghost/2018/01/reactvue-1515897405981.png" />
-                    <img src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/JQuery_logo-512.png" />
-                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-flat-arrows/50/reload3-512.png" />
                     <img src="https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/WordPress-512.png" />
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-flat-arrows/50/reload3-512.png" />
+                    <img src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/JQuery_logo-512.png" />
                 </div>
 		</div>
 	</div>
@@ -122,10 +127,14 @@
 <br>
 <br>
 <br>
-<div class="flex-center position-ref flex full-height ">
+<br>
+<br>
+<br>
+<div class="container text-right specialSig"><h1>Projects</h1></div>
+<div class="flex-center position-ref flex full-height">
     <div class="content5 container">
         <div class="projects">
-</div>
+            <b>
             <div class="project1 col">
                 <a class="links2" href="https://github.com/CoryHrycko/JavaScriptTetris"><h1>JavaScript Tetris</h1></a>
                 <p>This web application uses vanilla Javascript with no extra libraries to recreate a classic. It manipulates the DOM to paint the blocks onto a canvas element. These blocks are represented as individual objects in a multi layered array. Self identifying if the blocks do illegal moves and try to leave the canvas or move into other blocks. </p>
@@ -154,11 +163,15 @@
             <div class="project7 col">      
                 <a class="links2" href="https://github.com/CoryHrycko/profilewebsite"><h1 class="individualProjectTitles">Old Profile Website 1.0</h1></a>     
                 <p>https://github.com/CoryHrycko/profilewebsite. First attempt at a react website in which the state is manged by redux and used scss for the first time to try to align items.  THIS IS AN OLD FIRST ATTEMPT AT THE PROFILE WEBSITE. AFTER LEARNING MORE I HAD MADE A BETTER PROFILE WEBSITE PLEASE VISIT WWW.CORYHRYCKO.COM TO SEE. Profile-Website https://coryhrycko.github.io/profilewebsite/ </p>
-            </div>
+            </div></b>
         </div>
     </div>
 </div>
 {{--  --}}
+<br>
+<br>
+<br>
+<br>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
