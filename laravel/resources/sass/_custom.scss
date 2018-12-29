@@ -5,7 +5,11 @@ html, body {
     font-weight: 200;
     height: 100vh;
     margin: 0;
+	overflow:auto;
     overflow-x:hidden;
+}
+img{
+	max-width:100%;
 }
 
 .full-height {
@@ -43,6 +47,9 @@ html, body {
 }
 .content2{
     height:100%;
+}
+.content4{
+	flex-direction: column;
 }
 
 .title {
@@ -82,8 +89,7 @@ html, body {
 .m-b-md {
     margin-bottom: 30px;
 }
-.container{
-}
+
 .skillsBackEnd{
     flex-direction:column;
 }
@@ -95,6 +101,7 @@ html, body {
 .divC {
 		width: 500px;
 		margin: 50px auto;
+		height:100%;
 		text-align: center;
 	}
 
@@ -103,39 +110,39 @@ html, body {
 		height: 300px;
 		text-align: left;
 		margin: 60px auto;
-		-webkit-perspective: 1000px;
-		-webkit-perspective-origin: 50% -25%;
+		perspective: 1000px;
+		perspective-origin: 50% -25%;
 	}
 
 		.carouselC {
-			-webkit-transform-style: preserve-3d;
-			-webkit-transform: translateZ(-540px);
+			transform-style: preserve-3d;
+			transform: translateZ(-540px);
 			position: relative;
 			margin: 0;
 			width: 500px;
 			height: 300px;
-			-webkit-transition: 1s;
+			transition: 1s;
 		}
 
-			.carouselC h1 {
+			.carouselC img {
 				position: absolute;
 				border: 5px solid rgba(0, 0, 0, .8);
 				opacity: .5;
-				-webkit-transition: 1s;
+		transition: 1s;
         width: 500px;
         height: 300px;
         background:#ccc;
 			}
 
 				
-				.carouselC h1:nth-child(1) { -webkit-transform: translateZ(540px) scale(.8); }
-				.carouselC h1:nth-child(2) { -webkit-transform: rotateY(45deg) translateZ(540px) scale(.8); }
-				.carouselC h1:nth-child(3) { -webkit-transform: rotateY(90deg) translateZ(540px) scale(.8); }
-				.carouselC h1:nth-child(4) { -webkit-transform: rotateY(135deg) translateZ(540px) scale(.8); }
-				.carouselC h1:nth-child(5) { -webkit-transform: rotateY(180deg) translateZ(540px) scale(.8); }
-				.carouselC h1:nth-child(6) { -webkit-transform: rotateY(225deg) translateZ(540px) scale(.8); }
-				.carouselC h1:nth-child(7) { -webkit-transform: rotateY(270deg) translateZ(540px) scale(.8); }
-				.carouselC h1:nth-child(8) { -webkit-transform: rotateY(315deg) translateZ(540px) scale(.8); }
+				.carouselC img:nth-child(1) { transform: translateZ(540px) scale(.8); }
+				.carouselC img:nth-child(2) { transform: rotateY(45deg) translateZ(540px) scale(.8); }
+				.carouselC img:nth-child(3) { transform: rotateY(90deg) translateZ(540px) scale(.8); }
+				.carouselC img:nth-child(4) { transform: rotateY(135deg) translateZ(540px) scale(.8); }
+				.carouselC img:nth-child(5) { transform: rotateY(180deg) translateZ(540px) scale(.8); }
+				.carouselC img:nth-child(6) { transform: rotateY(225deg) translateZ(540px) scale(.8); }
+				.carouselC img:nth-child(7) { transform: rotateY(270deg) translateZ(540px) scale(.8); }
+				.carouselC img:nth-child(8) { transform: rotateY(315deg) translateZ(540px) scale(.8); }
 
 	.labelC {
 		cursor: pointer;
@@ -162,20 +169,21 @@ html, body {
 		background: #ddd;
 	}
 
-		.inputC[value="1"]:checked ~ .containerC .carouselC { -webkit-transform: translateZ(-840px) translatex(-600px); }
-		.inputC[value="2"]:checked ~ .containerC .carouselC { -webkit-transform: translateZ(-840px) rotateY(-45deg) translatex(-600px); }
-		.inputC[value="3"]:checked ~ .containerC .carouselC { -webkit-transform: translateZ(-840px) rotateY(-90deg) translatex(-600px); }
-		.inputC[value="4"]:checked ~ .containerC .carouselC { -webkit-transform: translateZ(-840px) rotateY(-135deg) translatex(-600px); }
-		.inputC[value="5"]:checked ~ .containerC .carouselC { -webkit-transform: translateZ(-840px) rotateY(-180deg) translatex(-600px); }
-		.inputC[value="6"]:checked ~ .containerC .carouselC { -webkit-transform: translateZ(-840px) rotateY(-225deg) translatex(-600px); }
-		.inputC[value="7"]:checked ~ .containerC .carouselC { -webkit-transform: translateZ(-840px) rotateY(-270deg) translatex(-600px); }
-		.inputC[value="8"]:checked ~ .containerC .carouselC { -webkit-transform: translateZ(-840px) rotateY(-315deg) translatex(-500px); }
+		.inputC[value="1"]:checked ~ .containerC .carouselC { transform: translateZ(-840px) translatex(-600px); }
+		.inputC[value="2"]:checked ~ .containerC .carouselC { transform: translateZ(-840px) rotateY(-45deg) translatex(-600px); }
+		.inputC[value="3"]:checked ~ .containerC .carouselC { transform: translateZ(-840px) rotateY(-90deg) translatex(-600px); }
+		.inputC[value="4"]:checked ~ .containerC .carouselC { transform: translateZ(-840px) rotateY(-135deg) translatex(-600px); }
+		.inputC[value="5"]:checked ~ .containerC .carouselC { transform: translateZ(-840px) rotateY(-180deg) translatex(-600px); }
+		.inputC[value="6"]:checked ~ .containerC .carouselC { transform: translateZ(-840px) rotateY(-225deg) translatex(-600px); }
+		.inputC[value="7"]:checked ~ .containerC .carouselC { transform: translateZ(-840px) rotateY(-270deg) translatex(-600px); }
+		.inputC[value="8"]:checked ~ .containerC .carouselC { transform: translateZ(-840px) rotateY(-315deg) translatex(-500px); }
 
-		.inputC[value="1"]:checked ~ .containerC .carouselC h1:nth-child(1) { -webkit-transform: translateZ(540px) scale(1); opacity: 1; }
-		.inputC[value="2"]:checked ~ .containerC .carouselC h1:nth-child(2) { -webkit-transform: rotateY(45deg) translateZ(540px) scale(1); opacity: 1; }
-		.inputC[value="3"]:checked ~ .containerC .carouselC h1:nth-child(3) { -webkit-transform: rotateY(90deg) translateZ(540px) scale(1); opacity: 1; }
-		.inputC[value="4"]:checked ~ .containerC .carouselC h1:nth-child(4) { -webkit-transform: rotateY(135deg) translateZ(540px) scale(1); opacity: 1; }
-		.inputC[value="5"]:checked ~ .containerC .carouselC h1:nth-child(5) { -webkit-transform: rotateY(180deg) translateZ(540px) scale(1); opacity: 1; }
-		.inputC[value="6"]:checked ~ .containerC .carouselC h1:nth-child(6) { -webkit-transform: rotateY(225deg) translateZ(540px) scale(1); opacity: 1; }
-		.inputC[value="7"]:checked ~ .containerC .carouselC h1:nth-child(7) { -webkit-transform: rotateY(270deg) translateZ(540px) scale(1); opacity: 1; }
-		.inputC[value="8"]:checked ~ .containerC .carouselC h1:nth-child(8) { -webkit-transform: rotateY(315deg) translateZ(540px) scale(1); opacity: 1; }
+		.inputC[value="1"]:checked ~ .containerC .carouselC img:nth-child(1) { transform: translateZ(540px) scale(1); opacity: 1; }
+		.inputC[value="2"]:checked ~ .containerC .carouselC img:nth-child(2) { transform: rotateY(45deg) translateZ(540px) scale(1); opacity: 1; }
+		.inputC[value="3"]:checked ~ .containerC .carouselC img:nth-child(3) { transform: rotateY(90deg) translateZ(540px) scale(1); opacity: 1; }
+		.inputC[value="4"]:checked ~ .containerC .carouselC img:nth-child(4) { transform: rotateY(135deg) translateZ(540px) scale(1); opacity: 1; }
+		.inputC[value="5"]:checked ~ .containerC .carouselC img:nth-child(5) { transform: rotateY(180deg) translateZ(540px) scale(1); opacity: 1; }
+		.inputC[value="6"]:checked ~ .containerC .carouselC img:nth-child(6) { transform: rotateY(225deg) translateZ(540px) scale(1); opacity: 1; }
+		.inputC[value="7"]:checked ~ .containerC .carouselC img:nth-child(7) { transform: rotateY(270deg) translateZ(540px) scale(1); opacity: 1; }
+		.inputC[value="8"]:checked ~ .containerC .carouselC img:nth-child(8) { transform: rotateY(315deg) translateZ(540px) scale(1); opacity: 1; }
+
