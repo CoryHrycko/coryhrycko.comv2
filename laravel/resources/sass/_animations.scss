@@ -1,0 +1,57 @@
+.hidden, .hiddenR {
+  opacity: 0;
+}
+
+@-webkit-keyframes fade-into {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-into {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-element {
+  -webkit-animation: fade-into 2.4s;
+          animation: fade-into 2.4s;
+}
+
+@-webkit-keyframes fade-intoR {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-intoR {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-elementR {
+  -webkit-animation: fade-intoR 2.4s;
+          animation: fade-intoR 2.4s;
+}

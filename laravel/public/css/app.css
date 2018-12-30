@@ -10553,7 +10553,6 @@ img {
 }
 
 .content5 {
-  background-image: linear-gradient(180deg, #fff, #6cb2eb);
   z-index: -1;
 }
 
@@ -10562,7 +10561,6 @@ img {
 }
 
 .links {
-  width: var(--breakpoint-lg);
   justify-content: space-between;
 }
 
@@ -10611,9 +10609,9 @@ img {
 }
 
 .specialSig {
-  margin-bottom: -1.5rem;
+  margin-bottom: -3.5rem;
   font-family: "Parisienne", cursive;
-  font-size: 44rem;
+  font-size: 7rem;
 }
 
 .divC {
@@ -10807,6 +10805,82 @@ img {
   -webkit-transform: rotateY(315deg) translateZ(540px) scale(1);
           transform: rotateY(315deg) translateZ(540px) scale(1);
   opacity: 1;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #474747;
+  outline: 1px solid slategrey;
+}
+
+.hidden,
+.hiddenR {
+  opacity: 0;
+}
+
+@-webkit-keyframes fade-into {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-into {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-element {
+  -webkit-animation: fade-into 2.4s;
+  animation: fade-into 2.4s;
+}
+
+@-webkit-keyframes fade-intoR {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-intoR {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-elementR {
+  -webkit-animation: fade-intoR 2.4s;
+  animation: fade-intoR 2.4s;
 }
 
 .navbar-laravel {

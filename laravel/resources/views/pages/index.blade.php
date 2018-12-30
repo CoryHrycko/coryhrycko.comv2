@@ -3,19 +3,32 @@
 @section('content')
 
 
-<div class="flex-center position-ref full-height">
+<div class="flex-center position-ref full-height" id="#home">
 
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title m-b-md specialSig">
                     {{$title}}
                 </div>
-                <video  src="coryhrycko.com/clocks.mp4"></video>
-
+                {{-- <video  src="coryhrycko.com/clocks.mp4"></video> --}}
+    
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
                 <nav class="links" id="navBar">
                     @if(count($pages) > 0)
-                            @foreach ($pages as $page)
-                                    <a href="/{{$page}}">{{$page}}</a>
-                            @endforeach
+                            {{-- @foreach ($pages as $page) --}}
+                                    <a href="#">{{$pages[0]}}</a>
+                                    <a href="#projects">{{$pages[1]}}</a>
+                                    <a href="https://anchor.fm/corys-corner">{{$pages[2]}}</a>
+                                    <a href="https://www.instagram.com/cory_hrycko/">{{$pages[3]}}</a>
+                                    <a href="https://www.linkedin.com/in/cory-hrycko/">{{$pages[4]}}</a>
+                                    <a href="https://github.com/CoryHrycko/">{{$pages[5]}}</a>
+                                    <a href="https://twitter.com/CoryHrycko">{{$pages[6]}}</a>
+                                    <a href="#hireMe">Hire me?</a>
+                            {{-- @endforeach --}}
                     @endif
                 </nav>
             </div>
@@ -31,7 +44,7 @@
 
 
 
-
+<div class="container text-left specialSig " id="#BackSkills">Back End</div> 
 <div class="divC">
 
 		<input class="inputC w-100"checked id="one" name="multiples" type="radio" value="1">
@@ -71,8 +84,14 @@
 			</div>
         </div>
     </div>
+    
+<br>
+<br>
+<br>
+
         {{-- End of Caro --}}
          {{-- Start front end caro --}}
+         <div class="container text-center specialSig " id="#FrontSkills">Front End</div> 
         <div class="divC">
 		<input class="inputC w-100"checked id="nine" name="multiples" type="radio" value="1">
         <label class="labelC" for="nine">Base</label>
@@ -130,7 +149,24 @@
 <br>
 <br>
 <br>
-<div class="container text-right specialSig"><h1>Projects</h1></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container text-right specialSig " id="Projects">Projects</div> 
+{{-- hidden tag to try to make this appear as well as the rest --}}
 <div class="flex-center position-ref flex full-height">
     <div class="content5 container">
         <div class="projects">
@@ -148,8 +184,8 @@
                 <p>This project is a command line Bank account app.It uses encapsulation and other OOP techniques, this is going to be turned into an API, that focuses on Database rendering, readers and buffers, which a front end website will be able to grab and request information about the bank accounts it is going to be a superagent api interfacer as well. The back end uses various constructors in order to achieve this outcome. The front end is going to show off either Vue or React which ever seems to be better with UI/UX.</p>
             </div>
             <div class="project4 col">     
-                <a class="links2" href="https://github.com/CoryHrycko/FirstRestPythonApi"><h1 class="individualProjectTitles">Coffee Shop Restaurant</h1></a>      
-                <p>https://github.com/CoryHrycko/FirstRestPythonApi This uses HTTP methods to return a hello world function for first introductions to api creation.</p>
+                <a class="links2" href="https://www.coryhrycko.com/coffee"><h1 class="individualProjectTitles">Coffee Shop Restaurant</h1></a>      
+                <p>https://www.coryhrycko.com/coffee. This project uses Laravel with asyncronis calls to load in chucks so that it can be loaded in under 3 seconds on a 80kbs bandwidth line. It is an exercise in optimization and speed. Uses every trick in the book from Service workers to loading in only the parts of the page that are valuable at that time.</p>
             </div>
             <div class="project4 col">     
                 <a class="links2" href="https://github.com/CoryHrycko/FirstRestPythonApi"><h1 class="individualProjectTitles">Python API</h1></a>      
@@ -172,21 +208,54 @@
 <br>
 <br>
 <br>
+<div class="container text-right specialSig " id="#Clients">Client Websites</div> 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="https://source.unsplash.com/800x400" alt="First slide">
+      <img class="d-block w-100" src="{{asset('svg/chapmans/1.png')}}" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://source.unsplash.com/800x400" alt="Second slide">
+      <img class="d-block w-100" src="{{asset('svg/chapmans/2.png')}}" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://source.unsplash.com/800x400" alt="Third slide">
+      <img class="d-block w-100" src="{{asset('svg/chapmans/3.png')}}" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{asset('svg/chapmans/4.png')}}" alt="Fourth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{asset('svg/chapmans/5.png')}}" alt="Fifth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{asset('svg/AllenArts/1.png')}}" alt="Sixth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{asset('svg/AllenArts/2.png')}}" alt="Seventh slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{asset('svg/coffeehouse.temp/1.png')}}" alt="Eigth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{asset('svg/coffeehouse.temp/2.png')}}" alt="Nineth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{asset('svg/coffeehouse.temp/3.png')}}" alt="Tenth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{asset('svg/coffeehouse.temp/4.png')}}" alt="Eleventh slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -201,9 +270,9 @@
 {{--  --}}
 
 {{--  --}}
-<div class="flex-center position-ref full-height">
+<div class="flex-center position-ref full-height" id="hireMe">
     <div class="content4 container flex-center">
-        <div><h1>Talk?</h1></div>
+        <div class="container text-center specialSig ">Come Talk</div>
         <br><br>
         <form>
             <div class="span">
