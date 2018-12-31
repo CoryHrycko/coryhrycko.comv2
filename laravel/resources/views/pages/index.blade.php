@@ -2,17 +2,16 @@
 
 @section('content')
 
-
+<div class="backgroundImage">
 <div class="flex-center position-ref full-height" id="#home">
 
             <div class="content">
                 <div class="title m-b-md specialSig">
                     {{$title}}
                 </div>
+                <a href="#hireMe"><h1><i class="fa fa-fire fire" aria-hidden="true"></i></h1></a>
                 {{-- <video  src="coryhrycko.com/clocks.mp4"></video> --}}
     
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -20,31 +19,29 @@
                 <nav class="links" id="navBar">
                     @if(count($pages) > 0)
                             {{-- @foreach ($pages as $page) --}}
-                                    <a href="#">{{$pages[0]}}</a>
-                                    <a href="#projects">{{$pages[1]}}</a>
-                                    <a href="https://anchor.fm/corys-corner">{{$pages[2]}}</a>
-                                    <a href="https://www.instagram.com/cory_hrycko/">{{$pages[3]}}</a>
-                                    <a href="https://www.linkedin.com/in/cory-hrycko/">{{$pages[4]}}</a>
-                                    <a href="https://github.com/CoryHrycko/">{{$pages[5]}}</a>
-                                    <a href="https://twitter.com/CoryHrycko">{{$pages[6]}}</a>
-                                    <a href="#hireMe">Hire me?</a>
+                                    <a href="#"><i class="fa fa-home" aria-hidden="true"></i> {{$pages[0]}}</a>
+                                    <a href="#projects"><i class="fa fa-lock" aria-hidden="true"></i> {{$pages[1]}}</a>
+                                    <a href="https://anchor.fm/corys-corner"><i class="fa fa-anchor" aria-hidden="true"></i> {{$pages[2]}}</a>
+                                    <a href="https://www.instagram.com/cory_hrycko/"><i class="fa fa-instagram" aria-hidden="true"></i> {{$pages[3]}}</a>
+                                    <a href="https://www.linkedin.com/in/cory-hrycko/"><i class="fa fa-linkedin fa-lg" aria-hidden="true" id="linkedinIcon"></i> {{$pages[4]}}</a>
+                                    <a href="https://github.com/CoryHrycko/"><i class="fa fa-github fa-lg" aria-hidden="true" id="githubIcon"></i> {{$pages[5]}}</a>
+                                    <a href="https://twitter.com/CoryHrycko" ><i class="fa fa-twitter fa-lg" id="twitterIcon" aria-hidden="true"></i> {{$pages[6]}}</a>
+                                    <a href="#hireMe"><i class="fa fa-fire" aria-hidden="true"></i> Hire me?</a>
                             {{-- @endforeach --}}
                     @endif
                 </nav>
             </div>
-        </div>
-<div class="position-ref full-height">
+        </div></div>
+<div class="position-ref full-height backgroundImage3">
     <div class="content2 container">
         <div class= " about">
-            <div class= "Skills">
+            <div class= "Skills ">
                 <div class="skillsBackEnd flex-center-right links2">
 {{--* Experimenting with Carosal --}}
 
 {{--*  --}}
 
-
-
-<div class="container text-left specialSig " id="#BackSkills">Back End</div> 
+<div class="container text-left specialSig" id="#BackSkills">Back End</div> 
 <div class="divC">
 
 		<input class="inputC w-100"checked id="one" name="multiples" type="radio" value="1">
@@ -92,7 +89,7 @@
         {{-- End of Caro --}}
          {{-- Start front end caro --}}
          <div class="container text-center specialSig " id="#FrontSkills">Front End</div> 
-        <div class="divC">
+        <div class="divC " data-ride="carousel" >
 		<input class="inputC w-100"checked id="nine" name="multiples" type="radio" value="1">
         <label class="labelC" for="nine">Base</label>
 
@@ -138,40 +135,43 @@
         </div>
     </div>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="container text-right specialSig " id="Projects">Projects</div> 
+{{-- This is ugly --}}
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+{{-- Above is for spacing. --}}
+<div class="container text-right specialSig" id="Projects">Projects</div> 
 {{-- hidden tag to try to make this appear as well as the rest --}}
-<div class="flex-center position-ref flex full-height">
+<div class="flex-center position-ref flex full-height ">
     <div class="content5 container">
-        <div class="projects">
+        <div class="projects backgroundImage4">
             <b>
-            <div class="project1 col">
+            <div class="project1 col ">
                 <a class="links2" href="https://github.com/CoryHrycko/JavaScriptTetris"><h1>JavaScript Tetris</h1></a>
                 <p>This web application uses vanilla Javascript with no extra libraries to recreate a classic. It manipulates the DOM to paint the blocks onto a canvas element. These blocks are represented as individual objects in a multi layered array. Self identifying if the blocks do illegal moves and try to leave the canvas or move into other blocks. </p>
             </div>
@@ -204,11 +204,11 @@
     </div>
 </div>
 {{--  --}}
-<br>
-<br>
-<br>
-<br>
-<div class="container text-right specialSig " id="#Clients">Client Websites</div> 
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<br class="backgroundImage2">
+<div class="container text-right specialSig backgroundImage2 " id="#Clients">Client Websites</div> 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -270,7 +270,7 @@
 {{--  --}}
 
 {{--  --}}
-<div class="flex-center position-ref full-height" id="hireMe">
+<div class="flex-center position-ref full-height backgroundImage3" id="hireMe">
     <div class="content4 container flex-center">
         <div class="container text-center specialSig ">Come Talk</div>
         <br><br>
@@ -285,6 +285,5 @@
         </form>
     </div>
 </div>
-
 @endsection
 

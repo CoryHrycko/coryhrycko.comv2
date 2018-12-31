@@ -12,7 +12,38 @@ html, body {
 img{
 	max-width:100%;
 }
+.backgroundImage{
+	background-image: linear-gradient($body-bg,lightblue);
+	-webkit-clip-path: polygon(50% 15%, 100% 33%, 100% 100%, 50% 100%, 0 100%, 0 33%);
+	clip-path: polygon(50% 15%, 100% 33%, 100% 100%, 50% 100%, 0 100%, 0 33%);
+	position: center;
+	background-attachment: relative;
+	height:100%;
+	z-index: -2;
+}
+.backgroundImage2{
+	background-color: lightblue;
+	// height: 100%;
+}
+.backgroundImage3{
+	background-image: linear-gradient(lightblue,$body-bg);
 
+}
+.backgroundImage4{
+	background-image: linear-gradient($body-bg,lightblue);
+
+}
+.fire a{
+	font-size: 4rem;
+}
+.upsideDownTriangle{
+	background-color: lightblue;
+	-webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+	clip-path: polygon(50% 100%, 0 0, 100% 0);
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+}
 .full-height {
     height: 100vh;
 }
@@ -196,3 +227,13 @@ img{
 		.inputC[value="7"]:checked ~ .containerC .carouselC img:nth-child(7) { transform: rotateY(270deg) translateZ(540px) scale(1); opacity: 1; }
 		.inputC[value="8"]:checked ~ .containerC .carouselC img:nth-child(8) { transform: rotateY(315deg) translateZ(540px) scale(1); opacity: 1; }
 
+		.footerCustom{
+			background:$body-bg;
+			position:relative;
+			border-top: solid black;
+			box-shadow: 5px 5px 2.5px;
+			height:2em;
+			margin-top:-2em;
+			clear:both;
+			font-size: .5em;
+		}
