@@ -7,7 +7,7 @@
 
             <div class="content">
                 <div class="title m-b-md specialSig">
-                    {{$title}}
+                    {{$title}} 
                 </div>
                 <a href="#hireMe"><h1><i class="fa fa-fire fire" aria-hidden="true"></i></h1></a>
                 {{-- <video  src="coryhrycko.com/clocks.mp4"></video> --}}
