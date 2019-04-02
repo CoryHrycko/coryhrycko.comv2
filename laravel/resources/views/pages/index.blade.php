@@ -17,8 +17,6 @@
 <br>
 <br>
                 <nav class="links" id="navBar">
-                    @if(count($pages) > 0)
-                            {{-- @foreach ($pages as $page) --}}
                                     <a href="#"><i class="fa fa-home" aria-hidden="true"></i> {{$pages[0]}}</a>
                                     <a href="#projects"><i class="fa fa-lock" aria-hidden="true"></i> {{$pages[1]}}</a>
                                     <a href="https://anchor.fm/corys-corner"><i class="fa fa-anchor" aria-hidden="true"></i> {{$pages[2]}}</a>
@@ -27,8 +25,6 @@
                                     <a href="https://github.com/CoryHrycko/"><i class="fa fa-github fa-lg" aria-hidden="true" id="githubIcon"></i> {{$pages[5]}}</a>
                                     <a href="https://twitter.com/CoryHrycko" ><i class="fa fa-twitter fa-lg" id="twitterIcon" aria-hidden="true"></i> {{$pages[6]}}</a>
                                     <a href="#hireMe"><i class="fa fa-fire" aria-hidden="true"></i> Hire me?</a>
-                            {{-- @endforeach --}}
-                    @endif
                 </nav>
             </div>
         </div></div>
@@ -48,7 +44,7 @@
         <label class="labelC" for="one">L</label>
 
 		<input class="inputC w-100" id="two" name="multiples" type="radio" value="2">
-        <label class="labelC" for="two">PHP</label>
+        <label class="labelC" for="two">ROR</label>
 
         <input class="inputC w-100" id="three" name="multiples" type="radio" value="3">
         <label class="labelC"for="three">Stats</label>
@@ -71,7 +67,7 @@
 		<div class="containerC">
 			<div class="carouselC">
                 <img src="https://cdn4.iconfinder.com/data/icons/logos-3/256/laravel-512.png" />
-                <img src="https://7php.com/pimg/2014/01/elephpant_281_193.png" />
+                <img src="https://rubyonrails.org/images/rails-logo.svg" />
                 <img src="https://www.addonflare.com/styles/addons/icons/ajax-advanced-forum-stats.png" />
                 <img src="https://cdn0.iconfinder.com/data/icons/superuser-extension-light/512/675277-data_database_sql_query-512.png" />
                 <img src="https://cdn2.iconfinder.com/data/icons/nodejs-1/512/nodejs-512.png" />
@@ -239,12 +235,12 @@
     <div class="carousel-item">
       <img class="d-block w-100" src="{{asset('svg/chapmans/5.png')}}" alt="Fifth slide">
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="{{asset('svg/AllenArts/1.png')}}" alt="Sixth slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="{{asset('svg/AllenArts/2.png')}}" alt="Seventh slide">
-    </div>
+{{--    <div class="carousel-item">--}}
+{{--      <img class="d-block w-100" src="{{asset('svg/AllenArts/1.png')}}" alt="Sixth slide">--}}
+{{--    </div>--}}
+{{--    <div class="carousel-item">--}}
+{{--      <img class="d-block w-100" src="{{asset('svg/AllenArts/2.png')}}" alt="Seventh slide">--}}
+{{--    </div>--}}
     <div class="carousel-item">
       <img class="d-block w-100" src="{{asset('svg/coffeehouse.temp/1.png')}}" alt="Eigth slide">
     </div>
